@@ -27,6 +27,16 @@
     npm run develop
     ```
 
+    **Before deploy.**
+    ```
+    gatsby build
+
+    or
+    
+    gatsby clean 
+    ```
+
+
 3.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!

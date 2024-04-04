@@ -5,7 +5,7 @@ const ArtistPage = ()  => {
     return (
         <Layout pageTitle="Artist">
             <h2>Vend with us!</h2>
-            <p>What we look for in an application:</p>
+            <p>What we look for in an application:
             <ul>
                 <li>Originality: We’re always looking for products or collections that stand out and will attract shoppers.</li>
                 <li>Quality: We’re sticklers when it comes to crafts(person)ship.</li>
@@ -13,7 +13,7 @@ const ArtistPage = ()  => {
                 <li>Branding: We look for a cohesive brand experience—from your online communications to your IRL display. That means no unfinished websites, blurry photos or confusing branding.</li>
                 <li>Social presence: Speaking of your online presence, we prioritize brands with an active Instagram presence.</li>
             </ul>
-
+            </p>
 
 <p>Want to learn more?  Check out the <Link to="faqs">FAQ.</Link></p>
 
