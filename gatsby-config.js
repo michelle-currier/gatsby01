@@ -9,7 +9,7 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: "gatsby-plugin-manifest",
       options: {
         name: "GatsbyJS",
         short_name: "GatsbyJS",
