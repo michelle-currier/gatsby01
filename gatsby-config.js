@@ -3,21 +3,20 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "Gatsby01",
-    siteUrl: "https://www.yourdomain.tld"
+    siteUrl: "https://www.yourdomain.tld",
+    title: "My First Gatsby Site",
   },
   plugins: [
-    "gatsby-plugin-sass",
-    {
-      resolve: "gatsby-plugin-manifest",
-      options: {
-        name: "GatsbyJS",
-        short_name: "GatsbyJS",
-        start_url: "/",
-        background_color: "#6b37bf",
-        theme_color: "#6b37bf"
-       // icon: "public/static/favicon.ico",
-      }
-    }
-  ]
+    // "gatsby-plugin-image",
+    // "gatsby-plugin-sharp",
+    // {
+    //   resolve: "gatsby-source-filesystem",
+    //   options: {
+    //     name: `blog`,
+    //     path: `${__dirname}/blog`,
+    //   }
+    // },
+    // "gatsby-plugin-mdx",
+    // "gatsby-transformer-sharp",
+  ],
 };
