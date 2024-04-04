@@ -8,7 +8,7 @@ $primary-color: #333;
 $green: #276749;
 $teal: #38B2AC;
 $pink: #B83280;
-$purple: #322659;
+$purple: #140b33;
 $indigo: #0B0977;
 $orange: #9C4221;
 $ltorange: #F6AD55;
@@ -16,20 +16,26 @@ $ltcyan: #C4F1F9;
 $ltgray: #EDF2F7;
 
 $transition: all .5s ease-out;
-// html {
-//     height: 100%;
-//     display: flex;
-//     margin: 0;
-//     padding: 0;
-// }
+html {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+}
 body {
   font: 100% $font-stack2;
   background: $purple;
-  background: linear-gradient(180deg, $indigo 0%, $purple 75%);
+//   background: linear-gradient(180deg, $indigo 0%, $purple 75%);
   color: $ltgray;
   height: 100%;
   margin: 0;
   padding: 0;
+//   filter: contrast(170%) brightness(1000%);
+  background: 
+	linear-gradient(0deg, $purple, rgba(202, 84, 0, 0.6)),
+	url(../images/noise.svg);
+
 }
 
 h1, h2, h3, h4 {
@@ -120,7 +126,7 @@ form {
     }
     button[type=submit] {
         background: $teal;
-        padding: 2rem 4rem;
+        padding: 1rem 3rem;
         border-radius: 6px;
         font-size: 1.2rem;
         border: 0px solid transparent;

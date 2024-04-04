@@ -15,7 +15,7 @@ const ArtistPage = ()  => {
             </ul>
             </p>
 
-<p>Want to learn more?  Check out the <Link to="faqs">FAQ.</Link></p>
+<p>Want to learn more?  Check out the <Link to="../faqs">FAQ.</Link></p>
 
 
 

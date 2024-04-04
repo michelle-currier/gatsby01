@@ -7,6 +7,7 @@ const EventPage = ()  => {
     return (
         <Layout pageTitle="Events">
             <h3>Let's make your next event special.</h3>
+            
 
             <Link to="../eventForm" className={big}>Make a inquiry!</Link>
         </Layout>
