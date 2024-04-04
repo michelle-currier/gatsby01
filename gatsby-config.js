@@ -9,14 +9,14 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     {
-      resolve: `gatsby-plugin-manifest`,
+      // resolve: `gatsby-plugin-manifest`,
       options: {
         name: "GatsbyJS",
         short_name: "GatsbyJS",
         start_url: "/",
         background_color: "#6b37bf",
         theme_color: "#6b37bf",
-        // icon: `/src/images/favicon.ico`,
+        icon: `public/static/favicon.ico`,
       }
     }
   ]
