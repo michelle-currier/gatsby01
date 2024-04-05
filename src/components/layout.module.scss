@@ -9,12 +9,13 @@ $green: #276749;
 $teal: #38B2AC;
 $pink: #B83280;
 $purple: #140b33;
+$main-bg: rgba(11, 9, 119, 0.6);
 $indigo: #0B0977;
 $orange: #9C4221;
 $ltorange: #F6AD55;
 $ltcyan: #C4F1F9;
 $ltgray: #EDF2F7;
-
+$shadow:  0px 2px 11px 0px rgba(0,0,0,0.75);  
 $transition: all .5s ease-out;
 html {
     height: 100%;
@@ -32,10 +33,12 @@ body {
   margin: 0;
   padding: 0;
 //   filter: contrast(170%) brightness(1000%);
-  background: 
-	linear-gradient(0deg, $purple, rgba(202, 84, 0, 0.6)),
-	url(../images/noise.svg);
+//   background: linear-gradient(0deg, $purple, rgba(19, 1, 109, 0.6)), url(../images/noise.svg);
+//   z-index: -1;
+//   position: relative;
 
+background: linear-gradient(0deg, $purple, rgba(0,0,0,0)), url(../images/glitter_bg.png);
+  //filter: contrast(270%) brightness(1000%) invert(100%);
 }
 
 h1, h2, h3, h4 {
@@ -48,11 +51,11 @@ h1 {
     color: $orange;
 }
 main > h1 {
-  background: $indigo; 
+  background: rgba(11, 9, 119, 0.3); 
   color: $ltcyan;
   text-shadow: -4px 3px 0 $indigo, -10px 7px $teal ;
   margin: 0px 0px 0px .8rem;
-
+  border-radius: 6px;
 }
 h2 {
     font-size: 3rem;
@@ -93,14 +96,25 @@ nav {
     font-family: $font-stack2;
     border: 1px dashed #bada55;
     border-radius: 6px;
-    background: $indigo;
+    background: $main-bg;
     padding-bottom: 2rem;
+    box-shadow: $shadow; 
+    // filter: contrast(100%) brightness(100%) invert(0%);
 }
 main {
     margin: 0 1rem;
     padding: 1rem;
     height: 100%;
+    // doesn't work :(
+    &.purple {
+        background: $purple;
+        & > h1 {
+            text-shadow: -4px 3px 0 $purple, -10px 7px $teal;
+        }
+    }    
+    
 }
+
 hr {
     margin: 2rem 0 2rem 0;
     border: 6px solid $teal;

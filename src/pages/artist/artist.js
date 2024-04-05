@@ -1,9 +1,10 @@
 import React from "react"
 import Layout from '../../components/layout'
+import { purple } from '../../components/layout.module.scss'
 import { Link } from 'gatsby'
 const ArtistPage = ()  => {
     return (
-        <Layout pageTitle="Artist">
+        <Layout pageTitle="Artist" pageColor="purple">
             <h2>Vend with us!</h2>
             <p>What we look for in an application:
             <ul>

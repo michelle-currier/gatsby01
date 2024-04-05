@@ -1,8 +1,8 @@
 import React from "react"
 import { Link } from "gatsby"
-import { container } from '../components/layout.module.scss'
+import { container, purple, green } from '../components/layout.module.scss'
 
-const Layout = ({ pageTitle, children }) => {
+const Layout = ({ pageTitle, children, pageColor }) => {
     return (
         <div className={container}>
             <nav>
@@ -21,8 +21,9 @@ const Layout = ({ pageTitle, children }) => {
                     </li>
                 </ul>
             </nav>
-            <main>
-                <h1>{pageTitle}</h1>
+            
+            <main className={pageColor}>  
+            <h1>{pageTitle}</h1>           
                 {children}
             </main>
         </div>
