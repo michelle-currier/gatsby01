@@ -175,13 +175,12 @@ import { Link } from "gatsby"
 // export default IndexPage
 import Layout from '../components/layout'
 import '../components/layout.module.scss'
-export const Head = () => <title>Home Page</title>
+export const Head = () => <title>Home</title>
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home Page">
+    <Layout pageTitle="Frenchmen Art Bazaar">
       <p>I'm doing the things! this is built on netlify with gatsby and react.
-  
       </p>
       <hr></hr>
     </Layout>
