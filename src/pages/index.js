@@ -183,6 +183,7 @@ const IndexPage = () => {
       <p>I'm doing the things! this is built on netlify with gatsby and react.
       </p>
       <hr></hr>
+      <p>Looking into Bootstrap as the main styles for the system and responsive blah blah.</p>
     </Layout>
   )
 }

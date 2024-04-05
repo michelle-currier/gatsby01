@@ -4,7 +4,8 @@ import { container, purple, green } from '../components/layout.module.scss'
 
 const Layout = ({ pageTitle, children, pageColor }) => {
     return (
-        <div className={container}>
+        // <div className={container}>
+        <div className="container-fluid">
             <nav>
                 <ul>
                     <li>
