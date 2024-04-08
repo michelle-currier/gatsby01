@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-@import '../../node_modules/bootstrap/scss/bootstrap';
+// @import '../../node_modules/bootstrap/scss/bootstrap';
+// @import '../../node_modules/react-bootstrap/dist/react-bootstrap';
+// @import '../../node_modules/react-bootstrap/dist/css/bootstrap.min.css';
+
+
+
 
 
 @font-face {
@@ -49,16 +54,17 @@ body {
 //   z-index: -1;
 //   position: relative;
 
-background: linear-gradient(180deg, $purple, rgba(0,0,0,0)), url(../images/glitter_bg.png);
+background: linear-gradient(180deg, $purple 30%, rgba(0,0,0,0)), url(../images/glitter_bg.png);
   //filter: contrast(270%) brightness(1000%) invert(100%);
 }
 
 // headings
 
 h2, h4 {
-    font-family: $font-stack;
+    font-family: $font-stack2;
     margin-top: 0;
     margin-bottom: 1.5rem;
+    font-weight: 700;
 }
 h1, h3 {
     font-family: $font-stack3;
@@ -193,4 +199,17 @@ a.big {
         background-color: $pink;
         color: $ltgray;
     }
+}
+
+// components idgaf
+.accordion {
+    .accHead {
+        font-family: $font-stack3;
+    }
+    .accordion-item {
+        .accordion-header {
+            background: #f0c;
+        }
+    }
+    
 }

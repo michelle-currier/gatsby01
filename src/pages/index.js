@@ -1,5 +1,6 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import '../../node_modules/react-bootstrap/dist/react-bootstrap'
+import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 //import Layout from "../components/layout"
 // const pageStyles = {
 //   color: "#232129",

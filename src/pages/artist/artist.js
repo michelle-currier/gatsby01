@@ -1,6 +1,7 @@
 import React from "react"
 import Layout from '../../components/layout'
 import { purple } from '../../components/layout.module.scss'
+
 import { Link } from 'gatsby'
 const ArtistPage = ()  => {
     return (
@@ -11,6 +12,11 @@ const ArtistPage = ()  => {
             <p>Cleaning up after yourself in community space is required. </p>
             <p>Use the link in the email to confirm any dates you are available to join us. Once we gather requests, we will loop back to confirm your spot. </p>				
             <p>All scheduling requests and confirmations will be conducted through bazaar@619frenchmen.com. If you have any questions please email.</p> 	
+
+            <hr></hr>
+
+         
+
             {/* <h2>Vend with us!</h2>
             <p>What we look for in an application:
             <ul>
@@ -22,7 +28,7 @@ const ArtistPage = ()  => {
             </ul>
             </p> */}
 
-<p>Want to learn more?  Check out the <Link to="../faqs">FAQ.</Link></p>
+<p className="fw-bolder">Want to learn more?  Check out the <Link to="../faqs">FAQ.</Link></p>
 
 
 
