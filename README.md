@@ -12,11 +12,14 @@
 1.  **Create a Gatsby site.**
 
     Use the Gatsby CLI to create a new site, specifying the minimal starter.
+    ``` sudo npm install -g gatsby-cli ```
+    if this doesn't work, look were the folder is that might be a bad install and delete it.
 
     ```shell
     # create a new Gatsby site using the minimal starter
     npm init gatsby
     ```
+
 
 2.  **Start developing.**
 
@@ -30,12 +33,10 @@
     **Before deploy.**
     ```
     gatsby build
-
-    or
     
     gatsby clean 
     ```
-
+    if the build has errors fix them and do a `gatsby clean` first then a new `gatsby build` to check if you can deploy. also might want to create a deploy branch on your github.
 
 3.  **Open the code and start customizing!**
 
