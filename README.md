@@ -27,7 +27,7 @@
 
     ```shell
     cd my-gatsby-site/
-    npm run develop
+    gatsby develop
     ```
 
     **Before deploy.**
