@@ -6,6 +6,7 @@ const Layout = ({ pageTitle, children, pageColor }) => {
     return (
         // <div className={container}>
         <div className="container-fluid">
+            <div className="layer"></div>
             <nav>
                 <ul>
                     <li>
