@@ -63,7 +63,6 @@ background: linear-gradient(180deg, $purple 30%, rgba(0,0,0,0)), url(../images/g
 h2, h4 {
     font-family: $font-stack2;
     margin-top: 0;
-    margin-bottom: 1.5rem;
     font-weight: 700;
 }
 h1, h3 {
@@ -203,8 +202,8 @@ a.big {
 
 // components idgaf
 .accordion {
-    .accHead {
-        font-family: $font-stack3;
+    h4 {
+        margin-bottom: 0px;
     }
     .accordion-item {
         .accordion-header {

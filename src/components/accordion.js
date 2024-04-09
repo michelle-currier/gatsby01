@@ -17,13 +17,13 @@ function BasicExample() {
   return (
     <Accordion data-bs-theme="dark" className="mt-5">
       <Accordion.Item>
-        <Accordion.Header>Hand made art!</Accordion.Header>
+        <Accordion.Header as="h2">Hand made art!</Accordion.Header>
         <Accordion.Body>
         To better reiterate this, Hand made art is made from raw materials that are transformed into original art.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item>
-        <Accordion.Header>Hand assembling is not the same as hand-made</Accordion.Header>
+        <Accordion.Header className="fw-bolder">Hand assembling is not the same as hand-made</Accordion.Header>
         <Accordion.Body>
         That is assembling material that you as the artist did not make and designing something new from already produced material. 
         </Accordion.Body>
