@@ -59,18 +59,20 @@ background: linear-gradient(180deg, $purple 30%, rgba(0,0,0,0)), url(../images/g
 }
 
 // headings
-
 h2, h4 {
     font-family: $font-stack2;
     margin-top: 0;
     font-weight: 700;
+}
+.accordion-h2 {
+    font-size: 2rem;
 }
 h1, h3 {
     font-family: $font-stack3;
 }
 h1 {
     // font-size: 4rem;
-    color: $orange;
+    color: $teal;
 }
 main > h1 {
   background: rgba(11, 9, 119, 0); 
@@ -78,13 +80,12 @@ main > h1 {
   text-shadow: -4px 3px 0 $indigo, -10px 7px $teal ;
   margin: 0px 0px 0px .8rem;
   border-radius: 6px;
+  font-size: 3rem;
 }
 h2 {
-    font-size: 3rem;
     color: $ltorange;
 }
 h3 {
-    font-size: 2.25rem;
     color: $green;
 }
 p {
@@ -200,15 +201,3 @@ a.big {
     }
 }
 
-// components idgaf
-.accordion {
-    h4 {
-        margin-bottom: 0px;
-    }
-    .accordion-item {
-        .accordion-header {
-            background: #f0c;
-        }
-    }
-    
-}

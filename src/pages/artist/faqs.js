@@ -5,15 +5,18 @@ import ArtistAppAccordion from "../../components/accordion2"
 import Layout from '../../components/layout'
 import Card from 'react-bootstrap/Card'
 import FaqsAccordion from "../../components/accordion3"
-
+// import '../../components/component-overrides.css';
 const FaqsPage = ()  => {
     return (
         <Layout>
             <h1>Frequently asked questions</h1>
-            <h1>What are we looking for in an application?</h1>
+            <h2 className="mt-5">What are we looking for in an application?</h2>
             
             <ArtistAppAccordion  />
             <hr></hr>
+            <h2 className="mt-4">So you are thinking about vending with us well here are some requirements to keep in mind.</h2>
+            <FaqsAccordion></FaqsAccordion>
+            <h2>And ...</h2>
             <Card data-bs-theme="dark">
                 <Card.Header><h1>Artist Agreement:</h1></Card.Header>
                 <Card.Body>
@@ -28,20 +31,8 @@ const FaqsPage = ()  => {
             </Card>
             
             
-            <Accordion />
+            {/* <Accordion /> */}
 
-            <h2 className="mt-4">So you are thinking about vending with us well here are some requirements to keep in mind.</h2>
-            <FaqsAccordion></FaqsAccordion>
-
-            <Card data-bs-theme="dark">
-                <Card.Body>
-                    <Card.Text>
-                        <p className="fw-bolder">Any work appearing in the booth image that falls outside of the medium and context of the four submitted images will not be allowed to be displayed. 
-                        </p>
-                    </Card.Text>
-                </Card.Body>
-                
-            </Card>
         </Layout>
     )
 } 

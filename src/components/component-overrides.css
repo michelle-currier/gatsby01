@@ -1,0 +1,19 @@
+/* components idgaf */
+.accordion {
+    /* --bs-accordion-bg: $green !important;
+    --bs-accordion-active-color: $teal; */
+    color: #C4F1F9;
+}
+
+.accordion-item .accordion-button, .accordion-body {
+    background-color: #140b33; 
+
+    color: #C4F1F9;
+}
+.accordion-item .accordion-button:not(.collapsed) {
+    background-color: #0B0977;
+}
+
+.card {
+    background-color: #140b33;
+}

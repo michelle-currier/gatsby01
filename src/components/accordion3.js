@@ -3,7 +3,7 @@ import Accordion from 'react-bootstrap/Accordion';
 
 function FaqsAccordion() {
   return (
-    <Accordion defaultActiveKey="0" data-bs-theme="dark" className="my-5">
+    <Accordion defaultActiveKey="0" data-bs-theme="dark" className="my-4">
       <Accordion.Item eventKey="0">
         <Accordion.Header>Branding: </Accordion.Header>
         <Accordion.Body>
@@ -34,7 +34,8 @@ function FaqsAccordion() {
           <li>Showcasing artwork without any empty spaces</li>
           <li>It's essential that the booth display features the same body of work as the other four artwork images</li>
         </ul> 
-        
+        <p className="fw-bolder">Any work appearing in the booth image that falls outside of the medium and context of the four submitted images will not be allowed to be displayed. 
+                        </p>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
