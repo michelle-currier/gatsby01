@@ -1,61 +1,45 @@
 import React from "react"
-
-// import Accordion from "react-bootstrap"
-// function AccordionFaqs( FaqsDetails ) { 
-//     return (
-//         <Accordion.Item>
-//             <Accordion.Header>Topic 1</Accordion.Header>
-//             <Accordion.Body>stuff that is more to know!</Accordion.Body>
-//         </Accordion.Item>
-//     )
-// }
-
-// export default AccordionFaqs
 import Accordion from 'react-bootstrap/Accordion';
-import '../components/component-overrides.css';
 
-function ArtistAppAccordion() {
+function FaqsAccordion() {
   return (
-    <Accordion defaultActiveKey="0" data-bs-theme="dark" className="my-4 faqs-accordion">
+    <Accordion defaultActiveKey="0" data-bs-theme="dark" className="my-4">
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Originality: </Accordion.Header>
+        <Accordion.Header>Branding: </Accordion.Header>
         <Accordion.Body>
-        We seek products crafted from raw materials, showcasing your unique creative vision. If you're a designer, share insights into your sourcing methods and the creative message guiding your artistry.
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Quality:</Accordion.Header>
-        <Accordion.Body>
-        We prioritize handmade craftsmanship, ensuring originality in every detail of your work.
+        Present a cohesive brand identity that radiates sophistication and seamlessly translates across digital and physical platforms. Avoid unfinished websites or pixelated imagery to maintain a standard of excellence.
         </Accordion.Body>
       </Accordion.Item>
       <Accordion.Item eventKey="0">
-        <Accordion.Header>Your Involvement:</Accordion.Header>
+        <Accordion.Header>Social media:</Accordion.Header>
         <Accordion.Body>
-        your direct involvement in the design and/or production process of each piece of work is required. We value creators who are fully engaged throughout the design and production process, we encourage you to submit videos of your artistic process.
+        Enhance your online visibility with a  curated social media presence. We appreciate artists that authentically engage and cultivate meaningful connections, particularly on platforms such as Instagram.
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="1">
-        <Accordion.Header>Hand made art!</Accordion.Header>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Minimum artwork requirements:</Accordion.Header>
         <Accordion.Body>
-        To better reiterate this, Hand made art is made from raw materials that are transformed into original art.
-       Please note hand assembling is not the same as hand-made. That is assembling material that you as the artist did not make and designing something new from already produced material.
-        </Accordion.Body> 
-      </Accordion.Item>
-      <Accordion.Item eventKey="2">
-        <Accordion.Header>We prioritize makers</Accordion.Header>
-        <Accordion.Body>
-        We are prioritizing artists who hand-make their work on our busiest days of Fridays and Saturdays. 
+        Each Applicant Must Provide:
+        <ul>
+          <li>Four (4) digital artwork images representing current work</li>
+          <li>along with one (1) digital image of booth display</li>
+        </ul> 
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="3">
-        <Accordion.Header>What about clothing vendors?</Accordion.Header>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Booth image guidelines:</Accordion.Header>
         <Accordion.Body>
-        In regards to clothing, we are prioritizing clothing that is hand printed by the artist. 
+        <ul>
+          <li>The booth image should offer a comprehensive view of the display</li>
+          <li>Showcasing artwork without any empty spaces</li>
+          <li>It's essential that the booth display features the same body of work as the other four artwork images</li>
+        </ul> 
+        <p className="fw-bolder">Any work appearing in the booth image that falls outside of the medium and context of the four submitted images will not be allowed to be displayed. 
+                        </p>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
   );
 }
 
-export default ArtistAppAccordion;
+export default FaqsAccordion;

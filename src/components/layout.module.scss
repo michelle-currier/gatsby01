@@ -48,14 +48,9 @@ body {
   color: $ltgray;
   height: 100%;
   margin: 0;
-  padding: 0;
-//   filter: contrast(170%) brightness(1000%);
-//   background: linear-gradient(0deg, $purple, rgba(19, 1, 109, 0.6)), url(../images/noise.svg);
-//   z-index: -1;
-//   position: relative;
-
-background: linear-gradient(180deg, $purple 30%, rgba(0,0,0,0)), url(../images/glitter_bg.png);
-  //filter: contrast(270%) brightness(1000%) invert(100%);
+  padding: 0; 
+  background: linear-gradient(180deg, $purple 30%, rgba(0,0,0,0)), url(../images/glitter_bg.png);
+  background-attachment: fixed;
 }
 
 // headings

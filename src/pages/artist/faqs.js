@@ -1,10 +1,10 @@
 import React from "react"
 // import { AccordionFaqs } from "../../components/accordion"
 import Accordion from "../../components/accordion"
-import ArtistAppAccordion from "../../components/accordion2"
+import ArtistAppAccordion from "../../components/accordion1"
 import Layout from '../../components/layout'
 import Card from 'react-bootstrap/Card'
-import FaqsAccordion from "../../components/accordion3"
+import FaqsAccordion from "../../components/accordion2"
 // import '../../components/component-overrides.css';
 const FaqsPage = ()  => {
     return (
