@@ -1,16 +1,4 @@
 import React from "react"
-
-// import Accordion from "react-bootstrap"
-// function AccordionFaqs( FaqsDetails ) { 
-//     return (
-//         <Accordion.Item>
-//             <Accordion.Header>Topic 1</Accordion.Header>
-//             <Accordion.Body>stuff that is more to know!</Accordion.Body>
-//         </Accordion.Item>
-//     )
-// }
-
-// export default AccordionFaqs
 import Accordion from 'react-bootstrap/Accordion';
 import '../components/component-overrides.css';
 
@@ -52,6 +40,17 @@ function ArtistAppAccordion() {
         <Accordion.Header>What about clothing vendors?</Accordion.Header>
         <Accordion.Body>
         In regards to clothing, we are prioritizing clothing that is hand printed by the artist. 
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item>
+        <Accordion.Header eventKey="4">
+          What is self sustained?
+        </Accordion.Header>
+        <Accordion.Body>
+        Self sustained means what you pack in you must pack out.
+        Sweep your space before and after shift.
+        Cleaning up after yourself in community space is required. 
+
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

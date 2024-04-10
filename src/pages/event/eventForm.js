@@ -1,6 +1,8 @@
 import React from "react"
 import Layout from '../../components/layout'
 export const Head = () => <title>Event Inquiry</title>
+
+
 export default function EventForm() {
     return (
         <Layout pageTitle="Event Inquiry">

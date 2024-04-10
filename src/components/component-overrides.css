@@ -1,10 +1,16 @@
+@font-face {
+font-family: 'Super Sunday';
+src: url('../images/SuperSunday.ttf');
+}
 /* components idgaf */
 .accordion {
     /* --bs-accordion-bg: $green !important;
     --bs-accordion-active-color: $teal; */
     color: #C4F1F9;
+    /* --bs-accordion-border-color: #C4E3F9; */
+    --bs-accordion-border-color: #C6F6D5;
+    --bs-accordion-border-width: 3px;
 }
-
 .accordion-item .accordion-button, .accordion-body {
     background-color: #140b33; 
 
@@ -13,7 +19,26 @@
 .accordion-item .accordion-button:not(.collapsed) {
     background-color: #0B0977;
 }
+.card { 
+    --bs-card-cap-bg: #C6F6D5!important;
+    /* --bs-card-bg:  #C4E3F9 !important; */
 
-.card {
-    background-color: #140b33;
+}
+.card p {
+   color: #0B0977; 
+}
+.navbar {
+    --bs-navbar-padding-y: 0 !important;
+}
+.navbar-brand {
+    --bs-navbar-brand-color: #B83280 !important;
+    font-family: 'Super Sunday';
+    text-shadow: -1px 2px 0 #38B2AC, -3px 4px #38B2AC;
+    --bs-navbar-brand-font-size: 2.4rem;
+    --bs-navbar-brand-padding-y: 0px;
+    --bs-navbar-brand-hover-color: #3E3BE1;
+}
+.navbar-toggler {
+    background-color: #38B2AC !important;
+    --bs-navbar-color: #fff;
 }

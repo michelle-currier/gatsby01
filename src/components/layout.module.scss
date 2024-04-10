@@ -3,11 +3,8 @@
 // @import '../../node_modules/bootstrap/scss/bootstrap';
 // @import '../../node_modules/react-bootstrap/dist/react-bootstrap';
 // @import '../../node_modules/react-bootstrap/dist/css/bootstrap.min.css';
-
-
-
-
-
+@import '../components/colors.scss';
+@import '../components/varibles.scss';
 @font-face {
     font-family: 'Super Sunday';
     src: url('../images/SuperSunday.ttf');
@@ -22,18 +19,23 @@ $font-stack3: 'Super Sunday';
 $font-stack4: 'Blasqer';
 $primary-color: #333;
 
-$green: #276749;
-$teal: #38B2AC;
-$pink: #B83280;
-$purple: #140b33;
-$main-bg: rgba(11, 9, 119, 0.6);
-$indigo: #0B0977;
-$orange: #9C4221;
-$ltorange: #F6AD55;
-$ltcyan: #C4F1F9;
-$ltgray: #EDF2F7;
+// $green: #276749;
+// $teal: #38B2AC;
+// $pink: #B83280;
+// $ltpink: #FFD2EC;
+// $purple: #140b33;
+// $main-bg: rgba(11, 9, 119, 0.6);
+// $indigo: #0B0977;
+// $blue: #3E3BE1;
+// $orange: #9C4221;
+// $ltorange: #F6AD55;
+// $ltcyan: #C4F1F9;
+// $ltgray: #EDF2F7;
 $shadow:  0px 2px 11px 0px rgba(0,0,0,0.75);  
 $transition: all .5s ease-out;
+
+// @import url('./mixins.scss');
+
 html {
     height: 100%;
     display: flex;
@@ -51,6 +53,7 @@ body {
   padding: 0; 
   background: linear-gradient(180deg, $purple 30%, rgba(0,0,0,0)), url(../images/glitter_bg.png);
   background-attachment: fixed;
+  margin-bottom: 4rem;
 }
 
 // headings
@@ -88,17 +91,23 @@ p {
 }
 
 // navigation
+
 nav {
     border-bottom: 3px solid $pink;
+    border-top: 3px solid $purple;
     ul {
         list-style-type: none;
         display: flex;
         padding-left: 0;
         margin: .5rem 0;
+        font-size: 2.5rem;
         li {
             margin: .5rem 1rem .7rem 1rem;
+            &:first-of-type {
+                margin-left: 0;
+            }
             a {
-                color: $ltcyan;
+                color: $green;
                 text-decoration: none;
                 transition: $transition;
                 &:hover {
@@ -110,6 +119,15 @@ nav {
         }  
     }
 }
+
+@media (max-width: 1199.98px)  { 
+
+    nav {
+        ul li {
+            font-size: 1.6rem;
+        }
+    }
+ }
 
 // content
 .layout {
@@ -125,7 +143,7 @@ nav {
 }
 main {
     margin: 0 1rem;
-    padding: 1rem;
+    padding: 1rem 1rem 8rem 1rem;
     height: 100%;
     // doesn't work :(
     &.purple {

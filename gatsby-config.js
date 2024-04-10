@@ -3,8 +3,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: "Gatsby01",
-    siteUrl: "https://www.yourdomain.tld"
+    title: "Frenchmen Art Bazaar",
+    description: "From our hearts to your hands... Make love buy art!",
+    author: "Michelle Currier",
+    siteUrl: "https://www.frenchenart.bazaar"
   },
   plugins: [
     "gatsby-plugin-sass",
@@ -18,6 +20,16 @@ module.exports = {
         theme_color: "#6b37bf",
         icon: "src/images/melting_face.png",
       }
-    }
+    },
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
   ]
 };

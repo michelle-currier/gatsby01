@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'Super Sunday';
+    src: url('../images/SuperSunday.ttf');
+}
+@font-face {
+    font-family: 'Blasqer';
+    src: url('../images/Blasquer.ttf');
+}
+$font-stack: 'EB Garamond';
+$font-stack2: 'Montserrat', sans-serif;
+$font-stack3: 'Super Sunday';
+$font-stack4: 'Blasqer';
+$primary-color: #333;
+
+$green: #276749;
+$teal: #38B2AC;
+$pink: #B83280;
+$purple: #140b33;
+$main-bg: rgba(11, 9, 119, 0.6);
+$indigo: #0B0977;
+$orange: #9C4221;
+$ltorange: #F6AD55;
+$ltcyan: #C4F1F9;
+$ltgray: #EDF2F7;
+$shadow:  0px 2px 11px 0px rgba(0,0,0,0.75);  
+$transition: all .5s ease-out;
