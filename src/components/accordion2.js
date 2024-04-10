@@ -38,6 +38,50 @@ function FaqsAccordion() {
                         </p>
         </Accordion.Body>
       </Accordion.Item>
+      <Accordion.Item eventKey="0">
+        <Accordion.Header>Amenities!!!</Accordion.Header>
+        <Accordion.Body>
+          <ul>
+            <li>Pole to pole booth space</li>
+            <li>Umbrellas and umbrella stands, an umbrella is required for each artist booth</li>
+            <li>Bathrooms	yep real bathrooms</li>
+            <li>Power (20x20AMP, 110V) </li>
+            <li>Broom and dustpan to clean your space before and after</li>
+            <li>Cold/Hot water dispenser </li>
+          </ul>    
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item>
+        <Accordion.Header>Artist need to bring</Accordion.Header>
+        <Accordion.Body>
+          <ul>
+            <li>Display (including tables, chairs, linens,tarps etc.)	</li>
+            <li>Extension cords, power strips, tarps Display lighting etc</li>
+          </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item>
+        <Accordion.Header>Rental Supplies</Accordion.Header>
+        <Accordion.Body>
+          <ul>
+            <li>We have certain items like clamp lights and extension cords for rental for $5 each. If light bulbs are borrowed they must be returned by the end of the shift.</li>
+            <li>Clamp lights, extension cords and light bulbs are also available for purchase. </li>
+          </ul>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item>
+        <Accordion.Header>Parking</Accordion.Header>
+        <Accordion.Body>None provided, there are paid lots and street parking in the area</Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item>
+        <Accordion.Header>Rain Cover</Accordion.Header>
+        <Accordion.Body>
+          <ul>
+            <li>Artist need to provide</li>			
+            <li>NO pop-up tents are allowed, we really recommend that everyone purchases clear shower curtains that you can hook onto your umbrella on rainy days so that patrons can still see your work while it is protected from the elements. </li>
+          </ul>
+        </Accordion.Body>
+      </Accordion.Item>
     </Accordion>
   );
 }
