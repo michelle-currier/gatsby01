@@ -3,17 +3,19 @@ font-family: 'Super Sunday';
 src: url('../images/SuperSunday.ttf');
 }
 /* components idgaf */
-.accordion {
-    /* --bs-accordion-bg: $green !important;
-    --bs-accordion-active-color: $teal; */
+.accordion {   
     color: #C4F1F9;
-    /* --bs-accordion-border-color: #C4E3F9; */
-    --bs-accordion-border-color: #C6F6D5;
-    --bs-accordion-border-width: 3px;
+    --bs-accordion-border-color: #276749;
+    --bs-border-color: #276749 !important;
+    --bs-border-width: 3px;
+}
+.accordion .accordion-item .accordion-header {
+    --bs-border-width: 3px !important;
+    --bs-accordion-border-color: #276749;
 }
 .accordion-item .accordion-button, .accordion-body {
     background-color: #140b33; 
-
+    --bs-accordion-border-color: #276749;
     color: #C4F1F9;
 }
 .accordion-item .accordion-button:not(.collapsed) {
@@ -28,7 +30,7 @@ src: url('../images/SuperSunday.ttf');
    color: #0B0977; 
 }
 .navbar {
-    --bs-navbar-padding-y: 0 !important;
+    --bs-navbar-padding-x: 2.6rem !important;
 }
 .navbar-brand {
     --bs-navbar-brand-color: #B83280 !important;

@@ -31,7 +31,7 @@ import Navbar from 'react-bootstrap/Navbar';
 
 function SiteNav() {
   return (
-    <>
+   
       <Navbar className="bg-body-tertiary">
         <Container>
           <Navbar.Brand href="#home">Frenchmen Art Bazaar</Navbar.Brand>
@@ -44,7 +44,7 @@ function SiteNav() {
         </Navbar.Collapse>
         </Container>
       </Navbar>
-      </>
+      
   );
 }
 export default SiteNav

@@ -1,22 +1,27 @@
 import React from "react"
 import Accordion from 'react-bootstrap/Accordion';
-
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+import Container from 'react-bootstrap/Container';
 function FaqsAccordion() {
   return (
-    <Accordion defaultActiveKey="0" data-bs-theme="dark" className="my-4">
-      <Accordion.Item eventKey="0">
+    <>
+    <Row>
+      <Col>
+    <Accordion defaultActiveKey="2" data-bs-theme="dark" className="my-4">
+      <Accordion.Item eventKey="2">
         <Accordion.Header>Branding: </Accordion.Header>
         <Accordion.Body>
         Present a cohesive brand identity that radiates sophistication and seamlessly translates across digital and physical platforms. Avoid unfinished websites or pixelated imagery to maintain a standard of excellence.
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="0">
+      <Accordion.Item eventKey="2">
         <Accordion.Header>Social media:</Accordion.Header>
         <Accordion.Body>
         Enhance your online visibility with a  curated social media presence. We appreciate artists that authentically engage and cultivate meaningful connections, particularly on platforms such as Instagram.
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="0">
+      <Accordion.Item eventKey="2">
         <Accordion.Header>Minimum artwork requirements:</Accordion.Header>
         <Accordion.Body>
         Each Applicant Must Provide:
@@ -26,7 +31,7 @@ function FaqsAccordion() {
         </ul> 
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="0">
+      <Accordion.Item eventKey="2">
         <Accordion.Header>Booth image guidelines:</Accordion.Header>
         <Accordion.Body>
         <ul>
@@ -38,20 +43,11 @@ function FaqsAccordion() {
                         </p>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="0">
-        <Accordion.Header>Amenities!!!</Accordion.Header>
-        <Accordion.Body>
-          <ul>
-            <li>Pole to pole booth space</li>
-            <li>Umbrellas and umbrella stands, an umbrella is required for each artist booth</li>
-            <li>Bathrooms	yep real bathrooms</li>
-            <li>Power (20x20AMP, 110V) </li>
-            <li>Broom and dustpan to clean your space before and after</li>
-            <li>Cold/Hot water dispenser </li>
-          </ul>    
-        </Accordion.Body>
-      </Accordion.Item>
-      <Accordion.Item>
+      </Accordion>
+      </Col>
+      <Col>
+      <Accordion defaultActiveKey="3" data-bs-theme="dark" className="my-4">   
+      <Accordion.Item eventKey="3">
         <Accordion.Header>Artist need to bring</Accordion.Header>
         <Accordion.Body>
           <ul>
@@ -60,7 +56,7 @@ function FaqsAccordion() {
           </ul>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item>
+      <Accordion.Item eventKey="3">
         <Accordion.Header>Rental Supplies</Accordion.Header>
         <Accordion.Body>
           <ul>
@@ -69,11 +65,11 @@ function FaqsAccordion() {
           </ul>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item>
+      <Accordion.Item eventKey="3">
         <Accordion.Header>Parking</Accordion.Header>
         <Accordion.Body>None provided, there are paid lots and street parking in the area</Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item>
+      <Accordion.Item eventKey="3">
         <Accordion.Header>Rain Cover</Accordion.Header>
         <Accordion.Body>
           <ul>
@@ -83,6 +79,9 @@ function FaqsAccordion() {
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>
+    </Col>
+    </Row>
+    </>
   );
 }
 
